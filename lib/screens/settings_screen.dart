@@ -4,7 +4,7 @@ import 'package:provider/provider.dart';
 import '../providers/theme_provider.dart';
 import '../providers/locale_provider.dart';
 import '../utils/app_strings.dart';
-//update
+
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
