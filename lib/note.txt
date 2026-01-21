@@ -1,0 +1,23 @@
+lib/
+├── main.dart
+│
+├── models/
+│   ├── note.dart
+│   └── note.g.dart
+│
+├── providers/
+│   ├── note_provider.dart
+│   ├── theme_provider.dart
+│   └── locale_provider.dart
+│
+├── screens/
+│   ├── home_screen.dart
+│   ├── editor_screen.dart
+│   └── settings_screen.dart
+│
+├── widgets/
+│   ├── note_card.dart
+│   └── undo_redo_bar.dart
+│
+└── utils/
+    └── app_strings.dart
