@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+//update
 
 class AppStrings {
   static String of(BuildContext context, String key) {
