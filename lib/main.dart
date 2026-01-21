@@ -8,7 +8,7 @@ import 'providers/note_provider.dart';
 import 'providers/theme_provider.dart';
 import 'providers/locale_provider.dart';
 import 'screens/home_screen.dart';
-
+//update
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Hive.initFlutter();
