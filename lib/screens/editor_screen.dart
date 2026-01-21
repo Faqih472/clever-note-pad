@@ -6,7 +6,7 @@ import '../models/note.dart';
 import '../providers/note_provider.dart';
 import '../widgets/undo_redo_bar.dart';
 import '../utils/app_strings.dart';
-//update
+
 
 class EditorScreen extends StatefulWidget {
   final Note? note;
