@@ -1,142 +1,149 @@
-📒 APLIKASI NOTES ANDROID (FLUTTER)
-🧩 Deskripsi Aplikasi
+📒 Android Notes App (Flutter)
 
-Aplikasi Notes Android berbasis Flutter dengan tampilan modern Material 3, terinspirasi dari Notion & Google Keep.
-Aplikasi ini mendukung pencatatan teks sederhana dengan fitur add, edit, delete, undo/redo, dark mode default, serta multi bahasa (Indonesia & English).
-Data catatan disimpan secara lokal menggunakan Hive sehingga tetap tersimpan walau aplikasi ditutup.
 
-✨ Fitur Utama
 
-➕ Tambah catatan
 
-✏️ Edit catatan yang sudah ada
 
-🗑️ Hapus catatan (long press)
 
-↩️ Undo & Redo teks (Android, via tombol)
+A modern Android Notes application built with Flutter using Material 3, inspired by Notion and Google Keep.
+This app supports basic text notes with add, edit, delete, undo/redo, default dark mode, and multi-language support (Indonesian & English).
 
-🌙 Dark Mode (default aktif)
+All notes are stored locally using Hive, ensuring data persistence even when the app is closed or offline.
 
-🌐 Multi Bahasa (Indonesia & English)
+✨ Key Features
 
-💾 Penyimpanan lokal (Hive)
+➕ Add new notes
 
-🎨 UI modern Material 3
+✏️ Edit existing notes
 
-🗂️ Struktur kode rapi & scalable
+🗑️ Delete notes (long press)
 
-🛠️ Teknologi yang Digunakan
-Teknologi	Keterangan
-Flutter	Framework UI
-Provider	State management
-Hive	Local database
+↩️ Undo & Redo text (Android-only, via buttons)
+
+🌙 Dark Mode (enabled by default)
+
+🌐 Multi-Language (Indonesian & English)
+
+💾 Local storage using Hive
+
+🎨 Modern Material 3 UI
+
+🗂️ Clean & scalable project structure
+
+🖼️ Demo / Screenshots
+Home Screen & Editor
+
+(Optional: add more screenshots or a GIF for UI animation)
+
+![App Animation](assets/images/demo.gif)
+
+🛠️ Technologies Used
+Technology	Description
+Flutter	UI Framework
+Dart	Programming Language
+Provider	State Management
+Hive	Local Database
 Material 3	UI Design
-UUID	Generate ID catatan
-flutter_localizations	Multi bahasa
-🗂️ STRUKTUR PROJECT
+UUID	Generate Note IDs
+flutter_localizations	Multi-Language Support
+🗂️ Project Structure
 lib/
 ├── main.dart
 │
 ├── models/
-│   ├── note.dart           # Model catatan + Hive annotation
-│   └── note.g.dart         # Generated Hive adapter
+│   ├── note.dart            # Note model + Hive annotation
+│   └── note.g.dart          # Generated Hive adapter
 │
 ├── providers/
-│   ├── note_provider.dart  # CRUD & state catatan
-│   ├── theme_provider.dart # Dark mode (default ON)
-│   └── locale_provider.dart# Pengaturan bahasa
+│   ├── note_provider.dart   # Note CRUD & state management
+│   ├── theme_provider.dart  # Dark mode (default ON)
+│   └── locale_provider.dart # Language settings
 │
 ├── screens/
-│   ├── home_screen.dart    # Halaman utama (list catatan)
-│   ├── editor_screen.dart  # Tambah & edit catatan + undo/redo
-│   └── settings_screen.dart# Pengaturan tema & bahasa
+│   ├── home_screen.dart     # Main screen (note list)
+│   ├── editor_screen.dart   # Add & edit notes + undo/redo
+│   └── settings_screen.dart # Theme & language settings
 │
 ├── widgets/
-│   ├── note_card.dart      # Card UI catatan
-│   └── undo_redo_bar.dart  # Tombol undo & redo
+│   ├── note_card.dart       # Note card UI
+│   └── undo_redo_bar.dart   # Undo & redo buttons
 │
 └── utils/
-    └── app_strings.dart    # String localization (ID & EN)
-
-🧠 Arsitektur Aplikasi
-
-Pattern: MVVM ringan
-
-State Management: Provider
-
-Persistence: Hive local database
-
-Localization: Manual string mapping
-
-Theme Handling: Global ThemeProvider
+    └── app_strings.dart     # Localization strings (ID & EN)
 
 🌙 Dark Mode
 
-Dark mode aktif secara default
+Dark mode enabled by default
 
-Bisa diubah lewat halaman Settings
+Can be toggled in Settings
 
-Menggunakan Material 3 theme
+Uses Material 3 Theme
 
-🌐 Multi Bahasa
+🌐 Multi-Language
 
-Bahasa yang tersedia:
+Available languages:
 
-🇮🇩 Indonesia (default)
+🇮🇩 Indonesian (default)
 
 🇬🇧 English
 
-Bahasa dapat diganti secara real-time melalui Settings.
+Language can be changed in real-time via Settings.
 
 ↩️ Undo & Redo
 
-Undo / Redo teks berbasis snapshot
+Undo / Redo based on text snapshots
 
-Fokus Android (tanpa keyboard shortcut)
+Focused on Android (no keyboard shortcuts)
 
-Tombol khusus di editor
+Dedicated buttons in the editor
 
-Aman saat edit catatan lama
+Safe when editing old notes
 
-💾 Penyimpanan Data
+💾 Data Persistence
 
-Menggunakan Hive
+Powered by Hive
 
-Catatan disimpan secara lokal
+Data stored locally
 
-Tidak memerlukan internet
+Works offline
 
-Tetap tersimpan setelah aplikasi ditutup
+Notes remain after closing the app
 
-🚀 Cara Menjalankan
+🚀 How to Run
 flutter pub get
 flutter pub run build_runner build
 flutter run
 
-📦 Dependency Utama
+📦 Main Dependencies
+
 provider
+
 hive
+
 hive_flutter
+
 uuid
+
 flutter_localizations
 
-📌 Status Aplikasi
+📌 App Status
 
-✔ Core feature selesai
-✔ Siap dikembangkan lebih lanjut
+✅ Core features implemented
+✅ Stable for basic usage
+✅ Ready for further development
 
-🔮 Pengembangan Selanjutnya (Opsional)
+🔮 Future Enhancements (Optional)
 
-Search & filter catatan
+🔍 Search & filter notes
 
-Pin catatan
+📌 Pin notes
 
-Checklist / markdown
+☑️ Checklist / Markdown support
 
-Autosave
+💾 Autosave
 
-Backup & restore
+☁️ Backup & restore
 
-Animasi ala Notion
+🎞️ Animations like Notion
 
-Export PDF / TXT
+📄 Export notes to PDF / TXT
