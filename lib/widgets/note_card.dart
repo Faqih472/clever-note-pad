@@ -5,7 +5,7 @@ import '../models/note.dart';
 import '../providers/note_provider.dart';
 import '../screens/editor_screen.dart';
 import '../utils/app_strings.dart';
-//update
+
 
 class NoteCard extends StatelessWidget {
   final Note note;
