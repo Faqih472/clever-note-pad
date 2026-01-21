@@ -24,9 +24,10 @@ This app supports basic text notes with **add, edit, delete, undo/redo**, **defa
 
 **Home Screen & Editor**
 
-(Optional: add more screenshots or a GIF for UI animation)
+(Optional: add more screenshots)
 
-![App Animation](assets/images/demo.gif)
+![Home Screen](assets/images/screenshot.png)
+
 
 ---
 
