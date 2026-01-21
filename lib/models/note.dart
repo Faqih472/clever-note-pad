@@ -1,6 +1,8 @@
 import 'package:hive/hive.dart';
 part 'note.g.dart';
 
+//update
+
 @HiveType(typeId: 0)
 class Note extends HiveObject {
   @HiveField(0)
