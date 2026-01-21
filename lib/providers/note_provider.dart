@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import '../models/note.dart';
+//update
 
 class NoteProvider extends ChangeNotifier {
   final box = Hive.box<Note>('notes');

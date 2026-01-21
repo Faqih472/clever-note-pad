@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+//update
 
 class LocaleProvider extends ChangeNotifier {
   Locale _locale = const Locale('id');
