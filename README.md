@@ -49,27 +49,23 @@ flutter_localizations	Multi-Language Support
 🗂️ Project Structure
 lib/
 ├── main.dart
-│
 ├── models/
-│   ├── note.dart            # Note model + Hive annotation
-│   └── note.g.dart          # Generated Hive adapter
-│
+│   ├── note.dart
+│   └── note.g.dart
 ├── providers/
-│   ├── note_provider.dart   # Note CRUD & state management
-│   ├── theme_provider.dart  # Dark mode (default ON)
-│   └── locale_provider.dart # Language settings
-│
+│   ├── note_provider.dart
+│   ├── theme_provider.dart
+│   └── locale_provider.dart
 ├── screens/
-│   ├── home_screen.dart     # Main screen (note list)
-│   ├── editor_screen.dart   # Add & edit notes + undo/redo
-│   └── settings_screen.dart # Theme & language settings
-│
+│   ├── home_screen.dart
+│   ├── editor_screen.dart
+│   └── settings_screen.dart
 ├── widgets/
-│   ├── note_card.dart       # Note card UI
-│   └── undo_redo_bar.dart   # Undo & redo buttons
-│
+│   ├── note_card.dart
+│   └── undo_redo_bar.dart
 └── utils/
-    └── app_strings.dart     # Localization strings (ID & EN)
+    └── app_strings.dart
+
 
 🌙 Dark Mode
 
