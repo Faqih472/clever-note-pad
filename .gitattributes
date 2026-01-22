@@ -1,0 +1,10 @@
+# Abaikan folder native dari statistik bahasa
+android/* linguist-vendored
+ios/* linguist-vendored
+build/* linguist-vendored
+windows/* linguist-vendored
+linux/* linguist-vendored
+macos/* linguist-vendored
+
+# Paksa file .dart agar selalu dianggap bahasa utama
+*.dart linguist-detectable=true
